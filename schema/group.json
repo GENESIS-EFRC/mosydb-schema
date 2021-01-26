@@ -1,0 +1,80 @@
+{
+  "$id": "mosydb/schema/group.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "group",
+  "title": "group",
+  "type": "object",
+  "description": "This schema is for describing an affiliation ID",
+  "required": [
+    "@id",
+    "PIname",
+    "location",
+    "status"
+  ],
+  "properties": {
+    "@id": {
+      "type": "string",
+      "title": "group@id",
+      "category": "uid",
+      "description": "id of the user"
+    },
+    "status": {
+      "type": "string",
+      "title": "status",
+      "description": "id of the user",
+      "enum": [
+        "active",
+        "non-active",
+        "pending"
+      ]
+    },
+    "pi_name": {
+      "$ref": "helper/personame.json"
+    },
+    "email": {
+      "type": "string",
+      "category": "email",
+      "title": "email",
+      "description": "a proper email for contacting the PI"
+    },
+    "location": {
+      "type": "object",
+      "title": "location",
+      "required": [
+        "institute",
+        "city",
+        "country"
+      ],
+      "properties": {
+        "institute": {
+          "type": "string",
+          "title": "institute",
+          "description": "place of research"
+        },
+        "city": {
+          "type": "string",
+          "title": "city",
+          "description": "place of research"
+        },
+        "state": {
+          "type": "string",
+          "title": "state",
+          "description": "place of research"
+        },
+        "country": {
+          "type": "string",
+          "title": "country",
+          "description": "place of research"
+        }
+      }
+    },
+    "related_users": {
+      "description": "list of users @id's who work with this PI",
+      "type": "array",
+      "title": "user@ids",
+      "uniqueItems": true,
+      "items_type": "string",
+      "category": "@id"
+    }
+  }
+}

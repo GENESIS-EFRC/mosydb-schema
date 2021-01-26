@@ -1,0 +1,100 @@
+{
+  "$id": "mosydb/schema/event.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "event",
+  "title": "event",
+  "type": "object",
+  "description": "a complete set that describes an action or observation event",
+  "required": [],
+  "properties": {
+    "@id": {
+      "type": "string",
+      "category": "@id",
+      "title": "event@id",
+      "description": "unique ID for an event"
+    },
+    "executed": {
+      "title": "executed",
+      "type": "boolean",
+      "description": "distinction on whether the protocol have been executed"
+    },
+    "experiment": {
+      "title": "experiment@id",
+      "type": "string",
+      "category": "@id",
+      "description": "related experiment ID"
+    },
+    "_environment": {
+      "title": "environment",
+      "description": "state that the system is at",
+      "type": "object",
+      "required": [],
+      "properties": {
+        "container": {
+          "title": "_key",
+          "type": "string",
+          "character": "none",
+          "description": "name of the container in which the materials are processed"
+        },
+        "value": {
+          "description": "the quantitative and/or qualitative description for the container",
+          "$ref": "helper/value.json"
+        },
+        "state": {
+          "title": "state",
+          "type": "object",
+          "properties": {
+            "atmosphere": {
+              "title": "atmosphere",
+              "type": "string",
+              "character": "none",
+              "description": "the type of the atmosphere: glove-box, N2, Ar, ambient"
+            },
+            "values": {
+              "description": "the quantitative and/or qualitative description of a system state",
+              "$ref": "helper/value.json"
+            }
+          }
+        }
+      }
+    },
+    "sequence": {
+      "title": "sequence",
+      "type": "object",
+      "description": "to order the sequence of events in an experiment",
+      "required": [],
+      "properties": {
+        "indexed": {
+          "title": "order",
+          "type": "integer",
+          "character": "positive",
+          "description": "the index-step at which this event happened"
+        },
+        "_timed": {
+          "$ref": "helper/time.json",
+          "description": "The time this event happened"
+        }
+      }
+    },
+    "class": {
+      "title": "class",
+      "type": "string",
+      "character": "from set",
+      "description": "The class of the event: action or observation",
+      "enum": [
+        "act",
+        "obs"
+      ]
+    },
+    "action": {
+      "title": "action",
+      "type": "string",
+      "character": "none",
+      "description": "the action name - a group of a lowed names, based on the field (from experiment/user) and class (above)"
+    },
+    "item": {
+      "$ref": "item.json"
+    }
+  }
+}
+

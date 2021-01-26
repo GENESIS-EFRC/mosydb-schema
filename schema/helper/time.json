@@ -1,0 +1,23 @@
+{
+  "$id": "mosydb/schema/helper/time.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "time",
+  "title": "time",
+  "description": "occurrence time of an event",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "start_time": {
+      "title": "start time",
+      "type": "number",
+      "category": "epoch_time",
+      "description": "The time an event started"
+    },
+    "end_time": {
+      "title": "end time",
+      "type": "number",
+      "category": "epoch_time",
+      "description": "The time an event ended"
+    }
+  }
+}

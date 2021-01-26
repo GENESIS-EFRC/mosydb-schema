@@ -1,0 +1,55 @@
+{
+  "$id": "mosydb/schema/helper/value.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "value",
+  "title": "value",
+  "description": "describes the value of a property",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "_key",
+      "description": "description of the quantity, e.g. units: temperature, speed, rate, amount, etc."
+    },
+    "numerical": {
+      "type": "object",
+      "title": "_key",
+      "required": [],
+      "properties": {
+        "value": {
+          "type": "object",
+          "title": "_key",
+          "properties": {
+            "planned": {
+              "type": "number",
+              "title": "quantity-planned",
+              "description": "the planned quantity of the property"
+            },
+            "actual": {
+              "type": "number",
+              "title": "quantity-actual",
+              "description": "the planned quantity of the property"
+            },
+            "actual_list": {
+              "type": "array",
+              "title": "_key",
+              "items_type": "number",
+              "description": "a list of planned quantities"
+            }
+          }
+        },
+        "units": {
+          "title": "unit",
+          "type": "string",
+          "description": "the units of the quantity"
+        }
+      }
+    },
+    "verbal": {
+      "type": "string",
+      "title": "_key",
+      "description": "qualitative descriptions, e.g. dissolved, clear, opaque, hot, cold, room temperature, steaming"
+    }
+  }
+}

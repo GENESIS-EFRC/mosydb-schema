@@ -1,0 +1,59 @@
+{
+  "$id": "mosydb/schema/process.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "process",
+  "title": "process",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "@id": {
+      "title": "_key",
+      "category": "@id",
+      "type": "string",
+      "description": "unique ID for an a protocol"
+    },
+    "experiment": {
+      "title": "experimentID",
+      "type": "string",
+      "category": "@id",
+      "description": "related experiment ID"
+    },
+    "label": {
+      "title": "category",
+      "type": "string",
+      "description": "distinction for whether it is protocol or an experiment",
+      "enum": [
+        "planned",
+        "executed"
+      ]
+    },
+    "executed_meta": {
+      "title": "_key",
+      "type": "object",
+      "required": [],
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "category": "@id",
+          "title": "contributorID",
+          "description": "the ID of the user"
+        },
+        "time": {
+          "$ref": "../helper/time.json"
+        }
+      }
+    },
+    "events": {
+      "title": "processID",
+      "type": "array",
+      "items_type": "string",
+      "category": "@id",
+      "description": "id of the event"
+    }
+  }
+}
+
+
+
+
+
