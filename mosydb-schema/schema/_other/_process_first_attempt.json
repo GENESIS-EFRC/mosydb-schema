@@ -1,0 +1,139 @@
+{
+  "datetime": "datetime",
+  "experiment": "id",
+  "sequence": [
+    {
+      "container": "name of the container # 1",
+      "sequence": [
+        {
+          "order": 1,
+          "action": "add",
+          "object": "uid_A",
+          "object_": "obs_something",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "amount",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        },
+        {
+          "order": 2,
+          "action": "add",
+          "object": "act_B",
+          "object_": "obs_something",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "result",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        },
+        {
+          "order": 3,
+          "action": "mix",
+          "object": "uid_mix",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "duration, speed",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        },
+        {
+          "order": 4,
+          "action": "change temp",
+          "object": "uid_heat",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "temperature, rate",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        },
+        {
+          "order": 5,
+          "action": "filter",
+          "object": "uid_filter",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "container": "name of the container # 2",
+      "sequence": [
+        {
+          "order": 6,
+          "time": "time()",
+          "action": "add",
+          "object": "uid_C",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "duration",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        },
+        {
+          "order": 7,
+          "action": "add",
+          "object": "uid_freez",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "rate, duration",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        },
+        {
+          "order": 8,
+          "action": "store",
+          "object": "uid_store",
+          "time": "time()",
+          "qoi": {
+            "name": "",
+            "qualitative": "",
+            "quantitative": {
+              "type": "",
+              "quantity": "",
+              "units": ""
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "user": "id"
+}

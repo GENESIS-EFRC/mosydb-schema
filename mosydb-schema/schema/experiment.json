@@ -1,0 +1,123 @@
+{
+  "$id": "mosydb/schema/experiment.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "experiment",
+  "title": "experiment",
+  "type": "object",
+  "description": "This schema is for describing an experiment - a high level",
+  "required": [],
+  "properties": {
+    "@id": {
+      "type": "string",
+      "category": "@id",
+      "title": "experiment@id",
+      "description": "unique ID for an experiment"
+    },
+    "access_control": {
+      "type": "string",
+      "title": "_key",
+      "description": "who can access the experiment information",
+      "enum": [
+        "group",
+        "public"
+      ]
+    },
+    "meta": {
+      "type": "object",
+      "title": "_key",
+      "description": "metadata of an experiment",
+      "properties": {
+        "contributors": {
+          "type": "array",
+          "items_type": "string",
+          "category": "@id",
+          "title": "user@id",
+          "description": "the ID of the contributors who designed the experiment"
+        },
+        "date": {
+          "type": "number",
+          "category": "epoch_time",
+          "title": "date",
+          "description": "the datetime when this protocol was created"
+        },
+        "editions": {
+          "type": "string",
+          "title": "_key",
+          "category": "commit_id",
+          "description": "the edition of the experiment - a commit id (GitHub-like)"
+        }
+      }
+    },
+    "protocol_meta": {
+      "type": "object",
+      "title": "protocol",
+      "properties": {
+        "system": {
+          "title": "system",
+          "description": "the target compound that is made, LiCl, Organic-compound name",
+          "type": "string"
+        },
+        "category": {
+          "title": "system category",
+          "description": "the category of the synthesis, e.g,: solid-state, sol-gel, solvent, etc.",
+          "type": "string"
+        },
+        "motivation": {
+          "title": "main motivation",
+          "description": "main motivation for the experiment",
+          "type": "string"
+        },
+        "version": {
+          "title": "version",
+          "type": "string",
+          "description": "Preferably a number, but can be also a version name"
+        },
+        "description": {
+          "title": "description",
+          "type": "string",
+          "description": "a description about the experiment"
+        },
+        "free_text": {
+          "title": "free text",
+          "type": "string",
+          "description": "a free text description about the experiment"
+        }
+      }
+    },
+    "executed": {
+      "type": "object",
+      "title": "executed",
+      "description": "the executed protocols",
+      "properties": {
+        "executed": {
+          "type": "boolean",
+          "title": "executed",
+          "description": "mark if an experiment was ever executed"
+        },
+        "time": {
+          "$ref": "helper/time.json",
+          "description": "the time an experiment was executed"
+        },
+        "notes": {
+          "type": "string",
+          "title": "notes",
+          "description": "a note about the experiment - free"
+        },
+        "events": {
+          "type": "array",
+          "title": "event@ids",
+          "items_type": "string",
+          "category": "@id",
+          "description": "event id's"
+        },
+        "outputs": {
+          "type": "array",
+          "title": "_key",
+          "items_type": "string",
+          "category": "@id",
+          "description": "output id's"
+        }
+      }
+    }
+  }
+}

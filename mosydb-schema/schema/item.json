@@ -1,0 +1,127 @@
+{
+  "$id": "mosydb/schema/item.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "item",
+  "title": "object",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "category": "@id",
+      "title": "item@id",
+      "description": "unique ID for an item"
+    },
+    "label": {
+      "type": "string",
+      "title": "_key",
+      "category": "label",
+      "description": "type of item",
+      "enum": [
+        "input",
+        "output"
+      ]
+    },
+    "input": {
+      "type": "object",
+      "title": "_key",
+      "description": "an input item",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "object name",
+          "description": "the name an object"
+        },
+        "description": {
+          "type": "string",
+          "title": "description",
+          "description": "a verbal description of an object"
+        },
+        "link": {
+          "type": "object",
+          "title": "_key",
+          "description": "lined object",
+          "properties": {
+            "item": {
+              "type": "string",
+              "category": "@id",
+              "title": "link experiment@id",
+              "description": "internally-related unique ID"
+            },
+            "url": {
+              "type": "string",
+              "category": "url",
+              "title": "link external url",
+              "description": "url to the item"
+            }
+          }
+        },
+        "value": {
+          "description": "the quantitative and/or qualitative description of the input",
+          "$ref": "helper/value.json"
+        }
+      }
+    },
+    "_output": {
+      "type": "object",
+      "title": "_key",
+      "description": "an output type",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "object name",
+          "description": "the name an object"
+        },
+        "description": {
+          "type": "string",
+          "title": "description",
+          "description": "a verbal description of an object"
+        },
+        "link": {
+          "type": "object",
+          "title": "link",
+          "description": "lined object",
+          "properties": {
+            "item": {
+              "type": "string",
+              "category": "@id",
+              "title": "link experiment@id",
+              "description": "internally-related unique ID"
+            }
+          }
+        },
+        "result": {
+          "type": "object",
+          "title": "results",
+          "description": "the output results",
+          "properties": {
+            "user label": {
+              "type": "string",
+              "title": "sample label",
+              "description": "the label a user used, eg. in notebook"
+            },
+            "successful": {
+              "type": "string",
+              "title": "successful",
+              "description": "whether the result is as expected",
+              "enum": [
+                "unknown",
+                "yes",
+                "no"
+              ]
+            },
+            "value": {
+              "description": "the quantitative and/or qualitative description of the result",
+              "$ref": "helper/value.json"
+            },
+            "attachment": {
+              "type": "string",
+              "title": "attachment",
+              "category": "uri",
+              "description": "a path to an attachment. Allows a single attachment"
+            }
+          }
+        }
+      }
+    }
+  }
+}

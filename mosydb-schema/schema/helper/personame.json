@@ -1,0 +1,28 @@
+{
+  "$id": "mosydb/schema/helper/personame.json",
+  "$schema": "https://json-schema.org/schema#",
+  "name": "personame",
+  "title": "person name",
+  "type": "object",
+  "required": [
+    "first",
+    "last"
+  ],
+  "properties": {
+    "first": {
+      "type": "string",
+      "title": "first name",
+      "description": "first name"
+    },
+    "middle": {
+      "type": "string",
+      "title": "middle name",
+      "description": "middle name"
+    },
+    "last": {
+      "type": "string",
+      "title": "last name",
+      "description": "last name"
+    }
+  }
+}
