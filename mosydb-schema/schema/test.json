@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/Draft-07/schema#",
+  "type": "object",
+  "properties": {
+  "price": {"type": "number"},
+  "name": {"type": "string"}
+  }
+}
