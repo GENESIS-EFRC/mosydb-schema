@@ -17,5 +17,5 @@
              conda config --set always_yes yes --set quiet true
              conda create -n validation python=3.9
              conda activate validation
-             pip install git+git://github.com/genesis-efrc/mosydb-schema@main
+             pip install git+git://github.com/GENESIS-EFRC/mosydb-schema@main
              python validate.py
