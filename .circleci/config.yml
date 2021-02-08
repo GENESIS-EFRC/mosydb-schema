@@ -17,5 +17,7 @@
              conda config --set always_yes yes --set quiet true
              conda create -n validation python=3.9
              conda activate validation
+             git config --global user.email "sb2896@columbia.edu"
+             git config --global user.name "Simon Billinge"
              pip install git+git://github.com/GENESIS-EFRC/mosydb-schema@main
              python validate.py
