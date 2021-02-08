@@ -15,8 +15,7 @@
              conda activate base
              conda update conda
              conda config --set always_yes yes --set quiet true
-             conda create -n validation python=3.8
+             conda create -n validation python=3.9
              conda activate validation
-             conda install -c conda-forge --file https://raw.githubusercontent.com/billingegroup/mosydb-schema/main/requirements/validate.txt
-             pip install git+git://github.com/regro/regolith@main
+             pip install git+git://github.com/genesis-efrc/mosydb-schema@main
              python validate.py
