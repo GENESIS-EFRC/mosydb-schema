@@ -25,11 +25,12 @@ class Printer:
 
 class MosyValidator:
     """A validator for mosy db schema."""
+    _schema_dir: Path = SCHEMA_DIR
 
     def __init__(self, verbose: int = 0):
         self._printer = Printer(verbose)
         self._schema = {}
-        self._load_schemas(SCHEMA_DIR)
+        self._load_schemas(self._schema_dir)
         self._check_schemas()
 
     def _load_schemas(self, schema_dir: Path) -> None:
