@@ -45,12 +45,12 @@ class MosyValidator:
             self._printer.print("Check schema {}".format(name))
             jsonschema.Draft7Validator(schema)
 
-    def __call__(self, name: str, data: str):
+    def __call__(self, name: str, data: dict):
         schema = self._schema.get(name, None)
         if schema is None:
             raise MosySchemaError("There is no schema {}".format(name))
         self._printer.print("Validate data against schema {}".format(name))
-        jsonschema.validate(data, schema)
+        return jsonschema.validate(data, schema)
 
 
 def main(verbose: int = 0) -> None:
