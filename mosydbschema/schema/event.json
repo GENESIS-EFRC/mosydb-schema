@@ -1,10 +1,11 @@
 {
-  "$id": "mosydb/schema/event.json",
+  "$id": "mosydbschema/schema/event.json",
   "$schema": "https://json-schema.org/schema#",
-  "name": "event",
-  "title": "event",
+  "name": "Event",
+  "title": "Event",
+  "$$target": "event.json",
   "type": "object",
-  "description": "a complete set that describes an action or observation event",
+  "description": "Describes an action or observation event",
   "required": [],
   "properties": {
     "@id": {

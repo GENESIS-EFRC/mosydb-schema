@@ -3,8 +3,9 @@
   "$schema": "https://json-schema.org/schema#",
   "name": "user",
   "type": "object",
-  "title": "user",
-  "description": "This schema is for describing an experiment - a high level",
+  "title": "User",
+  "$$target": "user.json",
+  "description": "For documenting a user's information",
   "required": [],
   "properties": {
     "@id": {

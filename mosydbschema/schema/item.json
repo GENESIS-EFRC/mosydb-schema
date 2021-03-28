@@ -1,9 +1,11 @@
 {
-  "$id": "mosydb/schema/item.json",
+  "$id": "mosydbschema/schema/item.json",
   "$schema": "https://json-schema.org/schema#",
-  "name": "item",
-  "title": "object",
+  "name": "Item",
+  "title": "Item",
+  "$$target": "item.json",
   "type": "object",
+  "description": "For describing and documenting a tool, instrument, or result",
   "properties": {
     "@id": {
       "type": "string",

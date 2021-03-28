@@ -2,9 +2,10 @@
   "$id": "mosydb/schema/group.json",
   "$schema": "https://json-schema.org/schema#",
   "name": "group",
-  "title": "group",
+  "title": "Group",
+  "$$target": "group.json",
   "type": "object",
-  "description": "This schema is for describing an affiliation ID",
+  "description": "For describing an affiliated group",
   "required": [
     "@id",
     "PIname",
@@ -28,7 +29,7 @@
         "pending"
       ]
     },
-    "pi_name": {
+    "PIname": {
       "$ref": "helper/personame.json"
     },
     "email": {
