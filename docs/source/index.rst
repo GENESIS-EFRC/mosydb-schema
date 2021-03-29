@@ -6,9 +6,9 @@
 ====================
 Documentation of Schema for Material Synthesis
 ====================
-A goal put forth by the Materials Genome is to establish large scale data sharing within the materials research
+A goal put forth by the Materials Genome Initiative (MGI) is to establish large scale data sharing within the materials research
 community to facilitate more rapid development of novel materials.
-The schema presented here is a first draft for storing synthesis recipes in a structured manner.
+We presented here a schema for storing synthesis recipes in a structured manner.
 We invite feedback on the schema, and ideas for modifying and adjusting it to best suit the needs of the
 research community.
 
