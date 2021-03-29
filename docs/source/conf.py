@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MOSY Schema'
+project = 'Schema for Material Synthesis'
 copyright = '2021, Yevgeny Rakita, Ruby Aidun, Simon Billinge'
 author = 'Yevgeny Rakita, Ruby Aidun, Simon Billinge'
 
