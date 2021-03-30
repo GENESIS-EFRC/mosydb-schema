@@ -1,20 +1,24 @@
-.. MOSY Schema documentation master file, created by
+.. Material Schema documentation master file, created by
    sphinx-quickstart on Wed Mar  3 10:43:48 2021.
-   You can adapt this file completely to your liking, but it should at least
+   Can adapt this file, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MOSY Schema's documentation!
-=======================================
+====================
+Documentation of Schema for Material Synthesis
+====================
+A goal put forth by the Materials Genome Initiative (MGI) is to establish large scale data sharing within the materials research
+community to facilitate more rapid development of novel materials.
+We present here a schema for storing synthesis recipes in a structured manner.
+We invite feedback on the schema, and ideas for modifying and adjusting it to best suit the needs of the
+research community.
+
+This repository contains the formal schemas and some Python scripts for validating the documents.
+
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   install
+   schema
+   release-history

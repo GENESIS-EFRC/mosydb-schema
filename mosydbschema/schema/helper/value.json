@@ -1,9 +1,10 @@
 {
   "$id": "mosydb/schema/helper/value.json",
   "$schema": "https://json-schema.org/schema#",
-  "name": "value",
-  "title": "value",
-  "description": "describes the value of a property",
+  "name": "Value",
+  "title": "Value",
+  "$$target": "helper/value.json",
+  "description": "Describes the measured value of a substance or property",
   "type": "object",
   "required": [],
   "properties": {
