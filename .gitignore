@@ -1,4 +1,6 @@
 # Sphinx documentation
+docs/html/
+docs/doctrees/
 docs/build/
 docs/_static/
 docs/_templates/
