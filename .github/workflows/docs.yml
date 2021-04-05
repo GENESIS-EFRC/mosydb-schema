@@ -29,10 +29,9 @@ jobs:
       - name: Install documentation-building requirements
         run: |
           set -vxeuo pipefail
-          python -m pip install sphinx
+          python -m pip install -r requirements/docs.txt
 
       - name: Build Docs
-        shell: bash -l {0}
         run: make -C docs html
 
       - name: Deploy
