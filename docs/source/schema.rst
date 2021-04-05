@@ -18,8 +18,8 @@ Formal Schema:
 
 .. jsonschema:: ../../mosydbschema/schema/item.json
 
-.. jsonschema:: ../../mosydbschema/schema/helper\personame.json
+.. jsonschema:: ../../mosydbschema/schema/helper/personame.json
 
-.. jsonschema:: ../../mosydbschema/schema/helper\time.json
+.. jsonschema:: ../../mosydbschema/schema/helper/time.json
 
-.. jsonschema:: ../../mosydbschema/schema/helper\value.json
+.. jsonschema:: ../../mosydbschema/schema/helper/value.json
