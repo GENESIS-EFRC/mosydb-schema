@@ -2,13 +2,11 @@
 Document Structure in Detail
 ****************************
 
-Bolded properities are required.
+The full JSON schema can be found and downloaded at https://github.com/GENESIS-EFRC/mosydb-schema.
+
+Bolded properties are required.
 
 .. jsonschema:: ../../mosydbschema/schema/user.json
-
-Formal Schema:
-
-.. literalinclude:: ../../mosydbschema/schema/user.json
 
 .. jsonschema:: ../../mosydbschema/schema/group.json
 

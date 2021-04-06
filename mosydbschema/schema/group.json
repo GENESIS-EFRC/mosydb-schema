@@ -22,7 +22,7 @@
     "status": {
       "type": "string",
       "title": "status",
-      "description": "id of the user",
+      "description": "status of the user, e.g. active or non-active",
       "enum": [
         "active",
         "non-active",

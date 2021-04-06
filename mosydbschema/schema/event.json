@@ -65,7 +65,7 @@
       "description": "to order the sequence of events in an experiment",
       "required": [],
       "properties": {
-        "indexed": {
+        "index": {
           "title": "order",
           "type": "integer",
           "character": "positive",
@@ -91,7 +91,7 @@
       "title": "action",
       "type": "string",
       "character": "none",
-      "description": "the action name - a group of a lowed names, based on the field (from experiment/user) and class (above)"
+      "description": "the action name - a group of allowed names, based on the field (from experiment/user) and class (above)"
     },
     "item": {
       "$ref": "item.json"
