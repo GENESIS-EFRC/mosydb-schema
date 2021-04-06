@@ -41,7 +41,7 @@
         "link": {
           "type": "object",
           "title": "_key",
-          "description": "lined object",
+          "description": "linked object",
           "properties": {
             "item": {
               "type": "string",
@@ -96,7 +96,7 @@
           "title": "results",
           "description": "the output results",
           "properties": {
-            "user label": {
+            "user_label": {
               "type": "string",
               "title": "sample label",
               "description": "the label a user used, eg. in notebook"
