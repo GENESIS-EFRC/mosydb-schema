@@ -44,7 +44,8 @@
             
   <section id="document-structure-in-detail">
 <h1>Document Structure in Detail<a class="headerlink" href="#document-structure-in-detail" title="Permalink to this headline">¶</a></h1>
-<p>Bolded properities are required.</p>
+<p>The full JSON schema can be found and downloaded at <a class="reference external" href="https://github.com/GENESIS-EFRC/mosydb-schema">https://github.com/GENESIS-EFRC/mosydb-schema</a>.</p>
+<p>Bolded properties are required.</p>
 <section id="user">
 <span id="user"></span><h2>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
@@ -133,60 +134,6 @@
 </tbody>
 </table>
 </section>
-<p>Formal Schema:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;$id&quot;</span><span class="p">:</span> <span class="s2">&quot;mosydb/schema/user.json&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;https://json-schema.org/schema#&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;User&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;$$target&quot;</span><span class="p">:</span> <span class="s2">&quot;user.json&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;For documenting a user&#39;s information&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="s2">&quot;@id&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;user@id&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;id of the user&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="s2">&quot;@id&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;group@id&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;related group ID&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;helper/personame.json&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;email&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;a proper email for contacting the user&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;status&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;the status of the user - whether is active or not&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;active&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;non-active&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;pending&quot;</span>
-      <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;related_experiments&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;list of experiment @id&#39;s that relate to this user&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;experiment@ids&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;uniqueItems&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-      <span class="s2">&quot;items_type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="s2">&quot;@id&quot;</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
 <section id="group">
 <span id="group"></span><h2>Group<a class="headerlink" href="#group" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-default">
@@ -223,7 +170,7 @@
 </td>
 <td colspan="3"><p><em>status</em></p></td>
 </tr>
-<tr class="row-odd"><td colspan="3"><p>id of the user</p></td>
+<tr class="row-odd"><td colspan="3"><p>status of the user, e.g. active or non-active</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>string</em></p></td>
@@ -449,7 +396,7 @@
 <tr class="row-even"><td colspan="4"><p>properties</p></td>
 </tr>
 <tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>indexed</p></li>
+<li><p>index</p></li>
 </ul>
 </td>
 <td colspan="3"><p><em>order</em></p></td>
@@ -487,7 +434,7 @@
 </td>
 <td colspan="4"><p><em>action</em></p></td>
 </tr>
-<tr class="row-odd"><td colspan="4"><p>the action name - a group of a lowed names, based on the field (from experiment/user) and class (above)</p></td>
+<tr class="row-odd"><td colspan="4"><p>the action name - a group of allowed names, based on the field (from experiment/user) and class (above)</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="3"><p><em>string</em></p></td>
@@ -822,7 +769,7 @@
 </td>
 <td colspan="3"><p><em>_key</em></p></td>
 </tr>
-<tr class="row-odd"><td colspan="3"><p>lined object</p></td>
+<tr class="row-odd"><td colspan="3"><p>linked object</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -932,7 +879,7 @@
 <tr class="row-even"><td colspan="3"><p>properties</p></td>
 </tr>
 <tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>user label</p></li>
+<li><p>user_label</p></li>
 </ul>
 </td>
 <td colspan="2"><p><em>sample label</em></p></td>
