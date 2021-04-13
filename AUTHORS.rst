@@ -10,4 +10,7 @@ Maintainer
 Contributors
 ------------
 
-None yet. Why not be the first? See: CONTRIBUTING.rst
+* Yevgeny Rakita yr2369@columbia.edu
+* Ruby Aidun r.aidun@columbia.edu
+* Simon J. L. Billinge sb2896@columbia.edu
+* Songsheng Tao st3107@columbia.edu
