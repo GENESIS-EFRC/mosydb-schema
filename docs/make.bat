@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=source
 set BUILDDIR=build
-set SPHINXPROJ=MaterialsSynthesisSchema
+set SPHINXPROJ=mosydb-schema
 
 if "%1" == "" goto help
 
