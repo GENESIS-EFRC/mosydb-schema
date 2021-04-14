@@ -29,7 +29,8 @@ jobs:
       - name: Install documentation-building requirements
         run: |
           set -vxeuo pipefail
-          python -m pip install -r requirements/docs.txt
+          python -m pip install -r requirements-docs.txt
+          python -m pip install . --no-deps
 
       - name: Build Docs
         run: make -C docs html
@@ -38,4 +39,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/html
+          publish_dir: ./docs/build/html
