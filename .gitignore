@@ -4,6 +4,8 @@ docs/doctrees/
 docs/build/
 docs/_static/
 docs/_templates/
+docs/build/
+docs/source/generated/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -166,3 +168,15 @@ local
 # Rever
 rever/
 /docs/examples/outputs/
+
+# Editor files
+#mac
+.DS_Store
+*~
+
+#vim
+*.swp
+*.swo
+
+#VSCode
+.vscode/

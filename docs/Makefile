@@ -1,12 +1,12 @@
 # Minimal makefile for Sphinx documentation
 #
 
-# You can set these variables from the command line, and also
-# from the environment for the first two.
-SPHINXOPTS    = "-W" # This flag turns warnings into errors
+# You can set these variables from the command line.
+SPHINXOPTS    = "-W"  # This flag turns warnings into errors.
 SPHINXBUILD   = sphinx-build
+SPHINXPROJ    = mosydb-schema
 SOURCEDIR     = source
-BUILDDIR      = .
+BUILDDIR      = build
 
 # Put it first so that "make" without argument is like "make help".
 help:
