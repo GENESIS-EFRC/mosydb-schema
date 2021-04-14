@@ -2,6 +2,18 @@
 MOSY DB Schema: A Materials Sythesis Schema
 ===========================================
 
+|Documentation|
+
+.. |Documentation| image:: https://github.com/GENESIS-EFRC/mosydb-schema/actions/workflows/docs.yml/badge.svg
+   :target: https://github.com/GENESIS-EFRC/mosydb-schema/actions/workflows/docs.yml
+
+
+|test|
+
+.. |test| image:: https://github.com/GENESIS-EFRC/mosydb-schema/actions/workflows/test.yml/badge.svg
+   :target: https://github.com/GENESIS-EFRC/mosydb-schema/actions/workflows/test.yml
+
+
 A goal put forth by the Materials Genome Initiative (MGI) is to establish large scale data sharing within the materials
 research community to facilitate more rapid development of novel materials.
 We present here a schema for storing synthesis recipes in a structured manner.
