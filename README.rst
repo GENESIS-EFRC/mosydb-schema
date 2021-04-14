@@ -1,6 +1,6 @@
-# MOSY DB Schema: A Materials Sythesis Schema
-
-[![GENESIS-EFRC](https://circleci.com/gh/GENESIS-EFRC/mosydb-schema.svg?style=svg)](https://app.circleci.com/pipelines/github/GENESIS-EFRC/mosydb-schema)
+===========================================
+MOSY DB Schema: A Materials Sythesis Schema
+===========================================
 
 A goal put forth by the Materials Genome Initiative (MGI) is to establish large scale data sharing within the materials
 research community to facilitate more rapid development of novel materials.
