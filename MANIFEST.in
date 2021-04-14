@@ -16,3 +16,4 @@ include mosydbschema/_version.py
 # include path/to/data_file
 include mosydbschema/schema/*.json
 include mosydbschema/schema/helper/*.json
+include mosydbschema/data/*.json
