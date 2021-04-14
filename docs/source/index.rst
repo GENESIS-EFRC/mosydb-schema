@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 =======================================================
-Documentation of MOSY: A Schema for Material Synthesis
+Documentation of MOSY DB Schema: A Schema for Material Synthesis
 =======================================================
 A goal put forth by the Materials Genome Initiative (MGI) is to establish large scale data sharing within the materials
 research community to facilitate more rapid development of novel materials.
