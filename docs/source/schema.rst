@@ -2,7 +2,7 @@
 Document Structure in Detail
 ****************************
 
-The full JSON schema can be found and downloaded at https://github.com/GENESIS-EFRC/mosydb-schema.
+The full JSON schema can be found and downloaded `here <https://github.com/GENESIS-EFRC/mosydb-schema>`_.
 
 Bolded properties are required.
 
