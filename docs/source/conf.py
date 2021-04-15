@@ -70,7 +70,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'MOSY DB Schema'
 copyright = '2021, Yevgeny Rakita, Ruby Aidun, Simon Billinge'
-author = 'Yevgeny Rakita, Ruby Aidun, Simon Billinge'
+author = 'Yevgeny Rakita, Ruby Aidun, Simon Billinge, Songsheng Tao'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
