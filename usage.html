@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Using the Schema and Validating Your Database &mdash; MOSY DB Schema 0.post1+g2e6afbc documentation</title>
+  <title>Using the Schema and Validating Your Database &mdash; MOSY DB Schema 0.post1+g86a8bb0 documentation</title>
   
 
   
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.post1+g2e6afbc
+                0.post1+g86a8bb0
               </div>
             
           
@@ -166,7 +166,22 @@
             
   <div class="section" id="using-the-schema-and-validating-your-database">
 <h1>Using the Schema and Validating Your Database<a class="headerlink" href="#using-the-schema-and-validating-your-database" title="Permalink to this headline">¶</a></h1>
-<p>Once you have installed the package, to validate any document database you create against the schema</p>
+<p>Once you have installed the package, to validate any document database you create against the schema, you need
+to use the class <code class="docutils literal notranslate"><span class="pre">MosyValidator</span></code>.</p>
+<p>Assuming that you have load data in a dictionary, you would like to validate it against schemas called <cite>test</cite>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Eggs&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">34.99</span><span class="p">}</span>
+<span class="n">schema</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span>
+<span class="n">validator</span> <span class="o">=</span> <span class="n">MosyValidator</span><span class="p">()</span>
+<span class="n">validator</span><span class="p">(</span><span class="n">schema</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here, “test” is a predefined data schema in the mosydbschema package. If it succeed, it won’t show any error,
+otherwise an error message will show up telling where the data does not obey the schema. If you enter a schema not
+defined in mosydbschema, it will raise an <code class="docutils literal notranslate"><span class="pre">MosySchemaError</span></code>.</p>
+<p>To let the validator prints out more messages like what schemas are loaded, you can switch the verbose to 1.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">validator</span> <span class="o">=</span> <span class="n">MosyValidator</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 
 
